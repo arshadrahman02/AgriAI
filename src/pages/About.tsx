@@ -1,43 +1,50 @@
 import { Leaf } from "lucide-react";
 
 const About = () => {
-  const blogs = [
+  const teamMembers = [
     {
-      title: "টেকসই কৃষি পদ্ধতি",
-      description: "পরিবেশ সুরক্ষার পাশাপাশি ফসলের উৎপাদন বাড়াতে পরিবেশবান্ধব কৃষি পদ্ধতি সম্পর্কে জানুন।",
-      icon: Leaf,
+      title: "CEO",
+      name: "Arshad Rahman",
+      description: "The visionary leader behind Krishimate, driving innovation and growth.",
+      image: "/ceo.jpg",
     },
     {
-      title: "ফসলের রোগ প্রতিরোধ",
-      description: "ফসলের ফলন প্রভাবিত হওয়ার আগেই সাধারণ রোগ সনাক্তকরণ এবং প্রতিরোধের জন্য গুরুত্বপূর্ণ পরামর্শ।",
-      icon: Leaf,
+      title: "CTO",
+      name: "John Doe",
+      description: "The technical expert, ensuring the platform's reliability and scalability.",
+      image: "/cto.jpg",
     },
     {
-      title: "স্মার্ট সেচ কৌশল",
-      description: "সম্পদ সংরক্ষণ এবং ফসলের স্বাস্থ্য উন্নত করতে পানি ব্যবস্থাপনার আধুনিক পদ্ধতি।",
-      icon: Leaf,
+      title: "CIO",
+      name: "Jane Smith",
+      description: "The strategic thinker, managing information and data for better decision-making.",
+      image: "/cio.jpg",
     },
   ];
 
   return (
-    <div className="container mx-auto px-4 py-12">
+    <div className="container mx-auto px-4 py-12 bg-gradient-to-b from-green-50 to-white text-foreground">
       <h1 className="text-4xl font-bold text-center text-primary mb-12">
-        কৃষি সম্পর্কিত তথ্য
+        আমাদের সম্পর্কে
       </h1>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {blogs.map((blog, index) => (
+      <div className="max-w-6xl mx-auto space-y-8">
+        {teamMembers.map((member, index) => (
           <div
             key={index}
-            className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+            className="bg-white rounded-xl shadow-lg overflow-hidden flex md:flex-row flex-col"
           >
-            <div className="flex items-center mb-4">
-              <blog.icon className="w-6 h-6 text-primary mr-2" />
-              <h2 className="text-xl font-semibold">{blog.title}</h2>
+            <div className="md:w-1/2">
+              <img
+                src={member.image}
+                alt={member.name}
+                className="h-full w-full object-cover"
+              />
             </div>
-            <p className="text-gray-600">{blog.description}</p>
-            <button className="mt-4 text-primary hover:text-primary/80">
-              আরও পড়ুন →
-            </button>
+            <div className="md:w-1/2 p-6 space-y-4">
+              <h2 className="text-2xl font-semibold text-primary">{member.title}</h2>
+              <h3 className="text-xl font-semibold text-gray-800">{member.name}</h3>
+              <p className="text-gray-600">{member.description}</p>
+            </div>
           </div>
         ))}
       </div>

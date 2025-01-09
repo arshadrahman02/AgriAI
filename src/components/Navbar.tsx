@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, ChevronDown, User } from "lucide-react";
+import { Menu, X, User, LogOut, LogIn } from "lucide-react";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -28,6 +28,8 @@ const Navbar = () => {
     { name: "আমাদের সম্পর্কে", path: "/about" },
     { name: "যোগাযোগ", path: "/contact" },
     { name: "ক্যারিয়ার", path: "/careers" },
+    { name: "কোর্স", path: "/course" },
+    { name: "সেবাসমূহ", path: "/services" },
   ];
 
   React.useEffect(() => {
@@ -52,7 +54,7 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0 flex items-center">
-              <span className="text-2xl font-bold text-white">ফার্মফিক্সমেট</span>
+              <span className="text-2xl font-bold text-white">কৃষিমেট</span>
             </Link>
           </div>
 
@@ -71,26 +73,6 @@ const Navbar = () => {
                     </Link>
                   </NavigationMenuItem>
                 ))}
-
-                <NavigationMenuItem>
-                  <NavigationMenuTrigger className="text-black">সেবাসমূহ</NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <div className="w-[200px] p-2 bg-grey-200">
-                      <Link
-                        to="/services/buy"
-                        className="block px-4 py-2 text-sm hover:bg-accent rounded-md"
-                      >
-                        ফসল কিনুন
-                      </Link>
-                      <Link
-                        to="/services/sell"
-                        className="block px-4 py-2 text-sm hover:bg-accent rounded-md"
-                      >
-                        ফসল বিক্রি করুন
-                      </Link>
-                    </div>
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
             {session?.user ? (
@@ -108,14 +90,12 @@ const Navbar = () => {
                 </DropdownMenuContent>
               </DropdownMenu>
             ) : (
-              <>
-                <Link to="/sign-in">
-                  <Button variant="outline" className="text-white bg-green-400">Sign In</Button>
-                </Link>
-                <Link to="/sign-up">
-                  <Button className="text-white ">Sign Up</Button>
-                </Link>
-              </>
+              <Link to="/sign-in">
+                <Button variant="outline" className="text-black bg-white">
+                  <LogIn className="h-4 w-4 mr-2" />
+                  লগইন
+                </Button>
+              </Link>
             )}
           </div>
 
@@ -143,41 +123,15 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
-            <div className="relative group">
-              <button className="w-full flex items-center justify-between px-3 py-2 text-base font-medium hover:bg-primary/10 rounded-md">
-                সেবাসমূহ
-                <ChevronDown className="h-4 w-4 ml-2" />
-              </button>
-              <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
-                <div className="py-1">
-                  <Link
-                    to="/services/buy"
-                    className="block px-4 py-2 text-sm hover:bg-accent"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    ফসল কিনুন
-                  </Link>
-                  <Link
-                    to="/services/sell"
-                    className="block px-4 py-2 text-sm hover:bg-accent"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    ফসল বিক্রি করুন
-                  </Link>
-                </div>
-              </div>
-            </div>
             {session?.user ? (
               <Button variant="ghost" className="w-full justify-start" onClick={handleSignOut}>Sign Out</Button>
             ) : (
-              <>
-                <Link to="/sign-in">
-                  <Button variant="outline" className="w-full text-white">Sign In</Button>
-                </Link>
-                <Link to="/sign-up">
-                  <Button className="w-full text-white ">Sign Up</Button>
-                </Link>
-              </>
+              <Link to="/sign-in">
+                <Button variant="outline" className="w-full text-black bg-white">
+                  <LogIn className="h-4 w-4 mr-2" />
+                  লগইন
+                </Button>
+              </Link>
             )}
           </div>
         </div>

@@ -12,6 +12,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { useLocation } from "react-router-dom";
 import CarouselSection from "@/components/landing/CarouselSection";
+import FAQSection from "@/components/landing/FAQSection";
 
 const Index = () => {
   const [isAnalyzing, setIsAnalyzing] = useState(false);
@@ -49,10 +50,11 @@ const Index = () => {
           <BenefitsSection />
           <StatsSection />
           <TestimonialsSection />
+          <FAQSection />
         </>
       ) : (
-        <div className="container py-8 px-4 mx-auto">
-          <div className="text-center mb-8">
+        <div className="container py-8 px-4 mx-auto flex flex-col items-center justify-center">
+          <div className="text-center mt-28 mb-16">
             <h1 className="text-4xl font-bold text-primary mb-4">
               ফসলের ক্ষতি বিশ্লেষণ
             </h1>

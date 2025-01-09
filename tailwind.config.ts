@@ -52,6 +52,10 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        mint: {
+          100: "#f0fdfa",
+          800: "#115e59",
+        }
       },
       borderRadius: {
         lg: "var(--radius)",

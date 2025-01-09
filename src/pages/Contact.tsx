@@ -2,9 +2,9 @@ import { Mail, Phone, MapPin } from "lucide-react";
 
 const Contact = () => {
   return (
-    <div className="container mx-auto px-4 py-12">
+    <div className="container mx-auto px-4 py-12 bg-gradient-to-b from-green-50 to-white text-foreground">
       <h1 className="text-4xl font-bold text-center text-primary mb-12">
-        Contact Us
+        যোগাযোগ করুন
       </h1>
       <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
         <div className="space-y-6">

@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold">ফার্মফিক্সমেট</h3>
+            <h3 className="text-2xl font-bold">কৃষিমেট</h3>
             <p className="text-gray-300">
               আমরা কৃষকদের জন্য একটি ডিজিটাল প্ল্যাটফর্ম যা তাদের ফসল পরিচর্যায় সহায়তা করে।
             </p>
@@ -79,7 +79,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
-          <p>© {new Date().getFullYear()} ফার্মফিক্সমেট। সর্বস্বত্ব সংরক্ষিত।</p>
+          <p>© {new Date().getFullYear()} কৃষিমেট। সর্বস্বত্ব সংরক্ষিত।</p>
         </div>
       </div>
     </footer>

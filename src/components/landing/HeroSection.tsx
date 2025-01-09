@@ -1,4 +1,3 @@
-import { Leaf } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
 import { useEffect } from "react";
@@ -36,15 +35,17 @@ const HeroSection = () => {
             স্মার্ট কৃষি সহায়ক
           </h1>
           <p className="text-2xl text-gray-600 max-w-3xl mx-auto mb-12 animate-fadeIn">
-            AI-powered ফসলের রোগ নির্ণয় এবং সমাধান সিস্টেম
+            AI-powered ফসলের রোগ নির্ণয় এবং সমাধান সিস্টেম। আমাদের প্ল্যাটফর্ম ব্যবহার করে আপনার ফসলের রোগ নির্ণয় করুন এবং বিশেষজ্ঞদের পরামর্শ নিন।
           </p>
-          <button
-            onClick={handleStartClick}
-            className="bg-primary hover:bg-primary/90 text-white font-semibold px-10 py-4 rounded-lg 
-                     transition-all transform hover:scale-105 animate-fadeIn text-xl"
-          >
-            শুরু করুন
-          </button>
+          <div className="flex justify-center">
+            <button
+              onClick={handleStartClick}
+              className="bg-primary hover:bg-primary/90 text-white font-semibold px-10 py-4 rounded-lg 
+                       transition-all transform hover:scale-105 animate-fadeIn text-xl"
+            >
+              শুরু করুন
+            </button>
+          </div>
         </div>
         <div className="max-w-4xl mx-auto mt-12">
           <h2 className="text-3xl font-semibold text-center text-gray-800 mb-8">

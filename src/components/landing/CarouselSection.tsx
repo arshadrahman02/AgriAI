@@ -2,11 +2,7 @@ import React, { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-import slide1 from "/slide1.jpg";
-import slide2 from "/slide2.jpg";
-import slide3 from "/slide3.jpg";
-import slide4 from "/slide4.jpg";
-import slide5 from "/slide5.jpg";
+import placeholder from "/placeholder.jpg";
 
 const CarouselSection = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, speed: 10 });
@@ -14,26 +10,11 @@ const CarouselSection = () => {
   const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
 
   const slides = [
-    {
-      image: slide1,
-      text: "আধুনিক কৃষি প্রযুক্তির সাথে আপনার ফসলের যত্ন নিন।",
-    },
-    {
-      image: slide2,
-      text: "আমাদের প্ল্যাটফর্ম ব্যবহার করে আপনার ফসলের রোগ নির্ণয় করুন।",
-    },
-    {
-      image: slide3,
-      text: "বিশেষজ্ঞদের পরামর্শ নিন এবং আপনার ফসলের ফলন বাড়ান।",
-    },
-    {
-      image: slide4,
-      text: "সরাসরি কৃষকদের কাছ থেকে ফসল কিনুন এবং ন্যায্য মূল্য নিশ্চিত করুন।",
-    },
-    {
-      image: slide5,
-      text: "আমাদের সাথে যোগ দিন এবং কৃষি খাতে আপনার কর্মজীবন শুরু করুন।",
-    },
+    { image: placeholder, text: "আধুনিক কৃষি প্রযুক্তির সাথে আপনার ফসলের যত্ন নিন।" },
+    { image: placeholder, text: "আমাদের প্ল্যাটফর্ম ব্যবহার করে আপনার ফসলের রোগ নির্ণয় করুন।" },
+    { image: placeholder, text: "বিশেষজ্ঞদের পরামর্শ নিন এবং আপনার ফসলের ফলন বাড়ান।" },
+    { image: placeholder, text: "সরাসরি কৃষকদের কাছ থেকে ফসল কিনুন এবং ন্যায্য মূল্য নিশ্চিত করুন।" },
+    { image: placeholder, text: "আমাদের সাথে যোগ দিন এবং কৃষি খাতে আপনার কর্মজীবন শুরু করুন।" },
   ];
 
   const scrollPrev = useCallback(() => {
@@ -70,7 +51,7 @@ const CarouselSection = () => {
     const startAutoSlide = () => {
       intervalId = setInterval(() => {
         emblaApi.scrollNext();
-      }, 5000);
+      }, 10000);
     };
 
     startAutoSlide();

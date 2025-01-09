@@ -12,7 +12,7 @@ const FeaturesSection = () => {
             </div>
             <h3 className="text-xl font-semibold text-gray-800 mb-2">দ্রুত রোগ নির্ণয়</h3>
             <p className="text-gray-600">
-              AI এর মাধ্যমে মাত্র কয়েক সেকেন্ডে ফসলের রোগ নির্ণয় করুন
+              AI এর মাধ্যমে মাত্র কয়েক সেকেন্ডে ফসলের রোগ নির্ণয় করুন। আমাদের উন্নত অ্যালগরিদম ব্যবহার করে দ্রুত এবং নির্ভুল রোগ সনাক্তকরণ করুন।
             </p>
           </div>
 
@@ -22,7 +22,7 @@ const FeaturesSection = () => {
             </div>
             <h3 className="text-xl font-semibold text-gray-800 mb-2">সমাধান প্রস্তাবনা</h3>
             <p className="text-gray-600">
-              বিশেষজ্ঞ পরামর্শ এবং সুনির্দিষ্ট সমাধান পান
+              বিশেষজ্ঞ পরামর্শ এবং সুনির্দিষ্ট সমাধান পান। আমাদের প্ল্যাটফর্ম আপনাকে ফসলের রোগ ও সমস্যার জন্য সঠিক সমাধান খুঁজে পেতে সাহায্য করবে।
             </p>
           </div>
 
@@ -32,7 +32,7 @@ const FeaturesSection = () => {
             </div>
             <h3 className="text-xl font-semibold text-gray-800 mb-2">স্মার্ট কৃষি</h3>
             <p className="text-gray-600">
-              আধুনিক প্রযুক্তির মাধ্যমে কৃষি উন্নয়নে সহায়তা
+              আধুনিক প্রযুক্তির মাধ্যমে কৃষি উন্নয়নে সহায়তা। আমরা স্মার্ট কৃষি প্রযুক্তি ব্যবহার করে ফসলের উৎপাদন বাড়াতে সাহায্য করি।
             </p>
           </div>
           <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow animate-fadeIn">
@@ -41,7 +41,7 @@ const FeaturesSection = () => {
             </div>
             <h3 className="text-xl font-semibold text-gray-800 mb-2">ফসল ক্রয়-বিক্রয়</h3>
             <p className="text-gray-600">
-              আমাদের প্ল্যাটফর্মের মাধ্যমে, কৃষকরা তাদের ফসল ক্রয়-বিক্রয় করতে পারে, ক্রেতারাও ন্যায্য মূল্য পায়।
+              আমাদের প্ল্যাটফর্মের মাধ্যমে, কৃষকরা তাদের ফসল ক্রয়-বিক্রয় করতে পারে, ক্রেতারাও ন্যায্য মূল্য পায়। আমরা একটি নিরাপদ এবং নির্ভরযোগ্য বাজার তৈরি করি।
             </p>
           </div>
           <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow animate-fadeIn delay-100">
@@ -50,7 +50,7 @@ const FeaturesSection = () => {
             </div>
             <h3 className="text-xl font-semibold text-gray-800 mb-2">বিশেষজ্ঞ সহায়তা</h3>
             <p className="text-gray-600">
-              আমরা পেশাদার কৃষি বিশেষজ্ঞদের মাধ্যমে সহায়তা এবং সমর্থন প্রদান করি।
+              আমরা পেশাদার কৃষি বিশেষজ্ঞদের মাধ্যমে সহায়তা এবং সমর্থন প্রদান করি। আমাদের বিশেষজ্ঞরা আপনাকে সঠিক পরামর্শ দিতে প্রস্তুত।
             </p>
           </div>
           <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow animate-fadeIn delay-200">
@@ -59,7 +59,7 @@ const FeaturesSection = () => {
             </div>
             <h3 className="text-xl font-semibold text-gray-800 mb-2">ক্যারিয়ারের সুযোগ</h3>
             <p className="text-gray-600">
-              আমরা আমাদের প্ল্যাটফর্মের মাধ্যমে ব্যক্তিদের তাদের কর্মজীবনকে সম্পূর্ণরূপে গড়ে তুলতে সহায়তা করি।
+              আমরা আমাদের প্ল্যাটফর্মের মাধ্যমে ব্যক্তিদের তাদের কর্মজীবনকে সম্পূর্ণরূপে গড়ে তুলতে সহায়তা করি। আমাদের সাথে যোগ দিন এবং কৃষি খাতে আপনার কর্মজীবন শুরু করুন।
             </p>
           </div>
         </div>
